@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""starts a flask web application
+"""this starts a flask web application
 tuned on 0.0.0.0 and port 5000"""
 
 from flask import Flask
@@ -8,7 +8,8 @@ app = Flask(__name__)
 
 
 @app.route("/", strict_slashes=False)
-def hbnb():
+def hello_hbnb():
+
     return "Hello HBNB!"
 
 
